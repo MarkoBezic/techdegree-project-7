@@ -6,18 +6,193 @@
         "header"
         "nav"
         "main"; 
+    font-family: sans-serif;
 }
+
 
 header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr .2fr .5fr;
+    background-color: #7477bf;
+}
+
+h1 {
+    color: white;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 140%;
+    top: 20%;
+    align-self: center;
+}
+
+.app {
+    font-weight: lighter;
+}
+
+sup {
+    font-size: 15% ;
+    top: -4em;
+}
+
+#bell {
+    height: 22px;
+    width: 22px;
+    justify-self: right;
+    align-self: center;
+    padding: 6px 10px;
+    border-right: 1px solid #5d61bf;
+    
+}
+
+img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    max-block-size: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+#josh {
+    font-size: smaller;
+    font-weight: lighter;
+    text-align: left;
+    align-self: center;
+    color: white;
+    /* padding-left: 5px; */
 }
 
 main {
     grid-area: main;
+    display: grid;
 }
 
 nav {
     grid-area: nav;
+    background-color: #4c4c72;
+    
+}
+.icons {
+    display: grid;
+    width: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.navIcon {
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    padding: 15px 10px;  
+}   
+
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+}
+
+.main-header {
+    display: grid;
+    background: #fbfbfb;
+    border: 1px solid lightgray;
+}
+
+.headline {
+    font-size: smaller;
+    justify-self: left;
+    align-self: center;
+    color: #6a6969;
+    background-color: white;
+    padding: 8px 28px; 
+    margin: 0px;
+    border-right: 1px solid lightgray;
+}
+
+.main-header-search {
+    justify-self: right;
+    align-self: center;
+    background: #fbfbfb;
+}
+
+.traffic-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #6a6969;
+
+}
+
+.traffic-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.traffic-nav-link {
+    padding: 0 4px;
+    align-self: center;
+    justify-content: center;
+}
+
+h3 {
+    padding-left: 10px;
+    color: #6a6969;
+    font-size: smaller;
+}
+
+.socialH3{
+    display: inline-block;
+    font-weight: lighter;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    margin-bottom: 0;
+    grid-column: 1 /span 2;
+}
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid lightgray;
+}
+
+.social-container {
+    display: grid;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: #fbfbfb;
+    margin: 15px 5% 30px;
+    grid-template-areas: 
+        "social-image text"
+        "social-image count";
+}
+.social-image {
+    grid-area: social-image;
+    background: #7477bf;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    justify-self: right;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.social-text :nth-child(1){
+    grid-area: text;
+    color: #7477bf;
+    font-weight: bolder;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.social-text :nth-child(2){
+    grid-area: count;
+    color: #6a6969;
+    font-size: xx-large;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 320px) {
+
 }
 
 @media (min-width: 768px){
@@ -28,10 +203,9 @@ nav {
             "nav main";
     }
     .main {
-        display: grid;
         grid-template-columns: 50%;
     }
-    .traffic, .social {
+    .traffic, .social, .main-header {
         grid-column: 1/ span 2;
     }
     .daily, .members, .message {
@@ -40,5 +214,13 @@ nav {
     .mobile, .activity, .settings {
         grid-column: 2/ span 1;
     }
+    .widget-container-full {
+        width: 90vw;
+    }
+    .widget-container-half {
+        width: 45vw;
+    }
+}
+@media (min-width: 1024px) {
 
 }
