@@ -110,9 +110,17 @@ nav {
     align-self: center;
     background-color: #fbfbfb;
     padding: 5px 5px 5px 30%;
-    border-bottom: 1px solid grey;
-    border-left: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
     border-radius: 0 0 0 5px;
+}
+
+.alert-banner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    }
+.alert-banner p{
+    justify-self: center;
 }
 
 
@@ -204,7 +212,7 @@ h3 {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
-    .traffic, .social, .main-header {
+    .traffic, .social, .main-header{
         grid-column: 1/ span 2;
     }
     .daily, .members, .message {
@@ -227,6 +235,15 @@ h3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         border-bottom: 1px solid lightgray;
+    }
+    .alert-banner {
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+        grid-column: 2/span 2;
+    }
+
+    .alert-banner-close {
+        justify-self: right;
     }
     
 }
