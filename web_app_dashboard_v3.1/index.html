@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css">
+    
+
     <title>Techdegree Project 7</title>
 </head>
 <body class="grid-container">
@@ -52,7 +54,7 @@
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
             <div class="main-header-search">
-                <input type="search" placeholder="Search">
+                <input class="top-search" type="search" placeholder="Search">
             </div>
 
         </div>
@@ -182,13 +184,13 @@
         <section class="activity">
             <h3>Recent Activity</h3>
 
-            <div class="ativity-container">
+            <div class="activity-container">
                 <img src="images/member-1.jpg" alt="Victoria Chambers" class="profile-image">
                 <div class="activity-text">
                     <p>Victoria Chambers commented on YourApp's SEO Tips</p>
                     <p>4 hours ago</p>
                 </div>
-                <p>></p>
+                <p class="arrow">></p>
             </div>
 
             <div class="activity-container">
@@ -197,7 +199,7 @@
                     <p>Dale Byrd like the post Facebook's Changes for 2016</p>
                     <p>5 hours ago</p>
                 </div>
-                <p>></p>
+                <p class="arrow">></p>
             </div>
 
             <div class="activity-container">
@@ -206,7 +208,7 @@
                     <p>Dawn Wood commented on Facebook's Changes for 2016</p>
                     <p>5 hours ago</p>
                 </div>
-                <p>></p>
+                <p class="arrow">></p>
             </div>
 
             <div class="activity-container">
@@ -215,7 +217,7 @@
                     <p>Dan Oliver posted YourApp's SEO Tips</p>
                     <p>1 day ago</p>
                 </div>
-                <p>></p>
+                <p class="arrow">></p>
             </div>
 
         </section>
@@ -232,16 +234,16 @@
         </section>
         <!-- local widget -->
         <section class="settings">
-            <h3>Settings</h3>
+            <h3 class='settingsH3'>Settings</h3>
 
             <label class="switch-light switch-ios" onclick="">
                 <input type="checkbox">
               
-                <strong>
+                <strong class='notifications'>
                     Send Email Notifications
                 </strong>
               
-                <span>
+                <span class = 'switch1'>
                   <span>Off</span>
                   <span>On</span>
                   <a></a>
@@ -251,11 +253,11 @@
               <label class="switch-light switch-ios" onclick="">
                 <input type="checkbox">
               
-                <strong>
-                
-                </strong>
+                <strong class='public'>
                     Set Profile to Public
-                <span>
+                </strong>
+                    
+                <span class='switch2'>
                   <span>Off</span>
                   <span>On</span>
                   <a></a>
