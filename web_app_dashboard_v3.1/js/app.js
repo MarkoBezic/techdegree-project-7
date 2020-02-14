@@ -13,7 +13,7 @@ alertBanner.innerHTML =
     <p><strong>Alert:</strong>You have <strong>6</strong> overdue tasks to complete</p>
     <p class="alert-banner-close">x</p>
 </div>
-`
+`;
 
 alertBanner.addEventListener('click', e => {
     const element = e.target;
@@ -96,7 +96,7 @@ const dailyOptions = {
     legend: {
         display: false
     }
-}
+};
 
 let dailyChart = new Chart(dailyCanvas, {
     type: 'bar',
@@ -119,7 +119,7 @@ const mobileData = {
     }]
 };
 const mobileOptions = {
-    rotation: .4,
+    rotation: 0.4,
     legend: {
         position: 'right',
         labels: {
@@ -146,7 +146,7 @@ send.addEventListener('click', () => {
     } else if (message.value === "") {
         alert("Please fill out message field before sending");
     } else {
-        alert('Messge successfully sent to: ${user.value}');
+        alert(`Messge successfully sent to: ${user.value}`);
     }
 });
 
