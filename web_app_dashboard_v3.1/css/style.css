@@ -12,7 +12,7 @@
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 1fr 1fr .2fr .5fr;
+    grid-template-columns: 1fr 1.5fr .2fr .5fr;
     background-color: #7477bf;
 }
 
@@ -70,14 +70,12 @@ img {
 }
 
 main {
-    grid-area: main;
-    
+    grid-area: main; 
 }
 
 nav {
     grid-area: nav;
     background-color: #4c4c72;
-    
 }
 .icons {
     display: grid;
@@ -92,12 +90,10 @@ nav {
     border-radius: 0;
     padding: 10px 10px; 
     opacity: .5;
-
 }   
 .navIcon.selected {
     opacity: 1;
 }
-
 
 .widget-container-full, .widget-container-half {
     width: 95vw;
@@ -106,7 +102,7 @@ nav {
 
 .main-header {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 14px 1fr;
 }
 
 .headline {
@@ -173,7 +169,6 @@ nav {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
 }
 .traffic-nav-link {
     padding: 0 4px;
@@ -186,7 +181,7 @@ nav {
 
 .mobile, .daily {
     border: 1px solid lightgray;
-    padding: 16px;
+    padding: 16px 0;
 }
 
 h3 {
@@ -376,7 +371,7 @@ button {
 
 @media (min-width: 768px){
     .grid-container {
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: 60px 1fr;
         grid-template-areas:
             "header header"
             "nav main";
@@ -386,7 +381,7 @@ button {
     }
     .main {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
     }
     .traffic, .social, .main-header{
         grid-column: 1/ span 2;
